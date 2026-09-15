@@ -1,5 +1,4 @@
 ## Unreleased
-## Unreleased
 ### ✨ Features
 - **Active scan on Android**: `startDiscovery` accepts `activeScan: true`, which registers the MediaRouter callback with `CALLBACK_FLAG_PERFORM_ACTIVE_SCAN` in addition to `CALLBACK_FLAG_REQUEST_DISCOVERY`. The default passive discovery only lists receivers Google Play services already knows about, so a picker could stay empty until another app scanned; request an active scan while your device picker is visible and fall back to passive when it closes, as the Cast SDK's own button does. No-op on iOS, which already scans actively while discovery runs.
 ### 🐛 Bug Fixes
